@@ -95,34 +95,47 @@ document.addEventListener('DOMContentLoaded', function () {
   downloadCVBtn.addEventListener('click', function () {
     // Create a sample CV download
     const cvContent = `
-            Gautam Kumar
-            Email: gautamkumar951011@gmail.com
-            Phone: +91 9771541226
-            Location: India
-            Summary: Passionate and dedicated Full Stack Developer with a strong foundation in web development technologies. Proven ability to create responsive, user-friendly applications and deliver high-quality code. Eager to contribute to innovative projects and collaborate with teams to achieve exceptional results.
-            Experience: Fresher with hands-on experience in web development projects.
-            Skills: HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, MySQL, Python, C++, C
-            Projects: Developed multiple web applications including e-commerce platforms, portfolio websites, and RESTful APIs
-            Education: Bachelor of Technology in Computer Science and Engineering
-            Certifications: Full Stack Web Development, JavaScript Algorithms and Data Structures, Responsive Web Design
-            Portfolio: https://gautamkumarportfolio.com
-            GitHub: https://github.com/gautamkumar
-            Full Stack Developer
+            Shalini Kumari
+📧 Email: kumarishalini2810@gmail.com
+📱 Phone: +91 **********
+📍 Location: India
+🔗 Portfolio: shalinikumariportfolio.com
+🔗 GitHub: github.com/shalini
+🔗 LinkedIn: linkedin.com/in/shalini-kumari40/
 
-            Languages: English, Hindi
-            Interests: Web Development, Open Source Contribution, Problem Solving
-            Technologies: 5+ mastered
+👩‍💻 Summary
+Passionate and dedicated Java Developer with a solid foundation in backend development and core Java concepts. Skilled in building robust, scalable applications using Java, Spring Boot, and relational databases. Eager to contribute to real-world projects and collaborate with dynamic teams to deliver clean and efficient code.
 
-            Contact: gautamkumar951011@gmail.com
-            LinkedIn: linkedin.com/in/gautamkumar
+🛠️ Skills
+Languages: Java, SQL, C++, Python, C
+Frameworks & Tools: Spring Boot, Hibernate, JSP/Servlets, Maven, Git
+Databases: MySQL, MongoDB
+Web Technologies: HTML, CSS, JavaScript (basic knowledge)
+Concepts: Object-Oriented Programming (OOP), REST APIs, MVC Architecture, Data Structures & Algorithms
 
-        `;
+💼 Projects
+E-Commerce Platform – Built backend functionality for product listing, cart management, and order processing.
+Portfolio Website – Personal site showcasing skills, projects, and resume.
+RESTful APIs – Developed and tested APIs using Spring Boot for task and user management features.
+
+🎓 Education
+Bachelor of Technology in Computer Science and Engineering
+
+📜 Certifications
+Java Programming (Oracle / Great Learning / Udemy – as applicable)
+Spring Boot & REST API Development
+Data Structures and Algorithms with Java
+
+🌐 Languages
+English
+Hindi
+ `;
 
     const blob = new Blob([cvContent], { type: 'text/plain' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'Gautam_kumar.txt';
+    a.download = 'shalini Kumari.txt';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -134,11 +147,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const contactMeBtn = document.querySelector('.btn-secondary');
 
   hireMeBtn.addEventListener('click', function () {
-    alert('Thank you for your interest! Please contact me at gautamkumar951011@gmail.com for hiring inquiries.');
+    alert('Thank you for your interest! Please contact me at kumarishalini2810@gmail.com for hiring inquiries.');
   });
 
   contactMeBtn.addEventListener('click', function () {
-    alert('Contact me at:\nEmail: gautamkumar951011@gmail.com\nPhone: +91 9262909417 \nLinkedIn: linkedin.com/in/gautam-kumar-4a4ab3293\nGitHub: github.com/Gautamkumar9262 \nInstagram: instagram.com/rock_star_gautam__?igsh=MWRoa2ZueWhscjgxNA==');
+    alert('Contact me at:\nEmail: kumarishalini2810@gmail.com\nPhone: +91 ********** \nLinkedIn: https://www.linkedin.com/in/shalini-kumari40?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app\nGitHub: github.com/shalini \nInstagram: https://www.instagram.com/shalu_1011__?igsh=MWNkeTJrbmp5ams2Yw==');
   });
 
   // Social media links with dynamic hover effects
@@ -163,15 +176,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let url = '#';
       if (platform.includes('facebook')) {
-        url = 'https://www.facebook.com/share/1B75spW6VN/';
+        url = 'https://www.facebook.com/aakriti.mishra.9480111';
       } else if (platform.includes('twitter')) {
-        url = 'https://x.com/Gautamkuma36546?t=0k6j0H-JTrRLZImlkYfmxA&s=09';
+        url = 'https://x.com/';
       } else if (platform.includes('instagram')) {
-        url = 'https://www.instagram.com/rock_star_gautam__?igsh=MWRoa2ZueWhscjgxNA==';
+        url = 'https://www.instagram.com/shalu_1011__?igsh=MWNkeTJrbmp5ams2Yw==';
       } else if (platform.includes('linkedin')) {
-        url = 'https://www.linkedin.com/in/gautam-kumar-4a4ab3293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';
+        url = 'https://www.linkedin.com/in/shalini-kumari40?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';
       } else if (platform.includes('github')) {
-        url = 'https://github.com/Gautamkumar9262';
+        url = 'https://github.com/';
       }
 
       window.open(url, '_blank');
@@ -269,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Dynamic typing effect for job titles
   const titleElement = document.querySelector('.title .highlight');
   const jobTitles = [
-    'Full Stack Developer'
+    'Java Developer'
   ];
 
   let currentTitleIndex = 0;
